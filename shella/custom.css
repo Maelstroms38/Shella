@@ -1,0 +1,468 @@
+/*
+File:			custom.css
+Description:	Custom styles for Thesis
+
+BASIC USAGE:
+
+If you have enabled the custom stylesheet in the Thesis options panel, the <body> tag 
+will be appended with the "custom" class, like so: <body class="custom">. You can use 
+the "custom" class to override *any* CSS declarations contained in the style.css file.
+
+For example, if you wish to change the default link color to green, you would add the 
+following declarations to this file:
+
+	.custom a, .custom a:visited { color: #090; }	<--- This makes links green
+	.custom a:hover { color: #00f; }	<--- This makes links blue when you mouse over them
+
+WHY THIS WORKS:
+
+By using the "custom" class, you are creating more specific CSS declarations for HTML
+elements. CSS styling is applied through rules of specificity, and because declarations
+prepended with .custom are more specific, they get applied when the page is rendered!
+
+More information about styling your Thesis installation using this file can be found
+in the User's Guide:
+	http://diythemes.com/thesis/rtfm/customizing-thesis-with-customcss/
+*/
+
+/* Main Body Styles */
+
+/* Layout Styles */
+
+.custom #container{
+	margin-top: 3em;
+	border: 2px solid #5c6a72;
+	}
+
+.custom #page{
+	padding: 0;
+	}
+
+.custom #content_box{
+	border-bottom: 1px solid #ececec;
+	background: #fcfcfc;
+	} 
+ 
+.custom #content_box #content{ 
+	padding-left: 2.5em;
+	background: #fff;
+	border-right: 1px solid #ececec;
+	}
+ .sidebar-module-inset {
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  border: 5px dashed #65c4d2;
+}
+.sidebar-module-inset p:last-child,
+.sidebar-module-inset ul:last-child,
+.sidebar-module-inset ol:last-child {
+  margin-bottom: 0;
+}
+/* Posts Box */
+#posts-box {
+  padding: 0;
+  border: 3px solid #efefef;
+  border-top: 0;
+  border-radius: 3px;
+}
+#posts-box h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+  background-color: #efefef;
+  color: #555;
+  padding: 12px;
+  text-align: center;
+  font-weight: 600;
+  font-family: 'Helvetica Neue';
+  letter-spacing: 2px;
+  margin: 0;
+}
+#posts-box ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+#posts-box li {
+  font-size: 16px;
+  padding: 12px;
+  border-bottom: 3px solid #efefef;
+  min-height: 60px;
+  line-height: 20px;
+}
+#posts-box li:last-child {
+  border-bottom: 0;
+}
+#posts-box a {
+  color: #555;
+}
+
+/* Header Styles */
+
+.custom #header{
+	padding: 3em;
+	background: #fcfcfc;
+	padding-bottom: 50px;
+	}
+		
+.custom #header #logo{
+	display: block;
+	width: 491px;
+	height: 84px;
+	}
+
+.custom #header #logo a{
+	background: url(img/Logo.png) no-repeat;
+	display: block;
+	width: 640px;
+	height: 264px;
+	top: -30px;
+	position: relative;
+	text-indent: -9999px;
+	}	
+
+.custom #header #tagline{
+	text-indent: -9999px;
+	height: 0px !important;
+	width: 0px !important;	
+	}
+	
+	
+.custom #header #header-contact-info{
+	list-style-type: none;
+	text-align: right;
+	position: relative;
+	top: -40px; 
+	z-index: 100000;
+	}
+
+.custom #header #header-contact-info li{
+	font-size: 9pt;
+	line-height: 1.571em;
+	}
+
+
+/* Utility Styles */
+
+.custom img.frame{
+	padding: 1px;
+	background: #fff;
+	border: 1px solid #ddd;
+	}
+
+.custom img.frame.alignright{
+	margin-left: 1.2em;
+	}
+
+
+ 
+.custom a{
+	color: #3a708c;
+	}
+
+/* Navigation Styles */
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+  background-color: #f8f8f8;
+}
+.navbar-brand {
+  font-family: 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.9em;
+  text-transform: lowercase;
+  font-weight: 100;
+  letter-spacing: -1px;
+  padding-left: 170px;
+}
+.navbar-right {
+  padding-right: 120px;
+}
+.navbar-default .navbar-brand {
+  color: #555;
+}
+.navbar-default .navbar-nav>li:first-child>a {
+  color: #e74c3c;
+}
+.navbar-default .navbar-nav>li:nth-child(2)>a {
+  color: #2ecc71;
+}
+.navbar-default .navbar-nav>li:nth-child(3)>a {
+  color: #3498db;
+}
+.navbar-default .navbar-nav>li:nth-child(4)>a {
+  color: #f39c12;
+}
+.navbar-default .navbar-nav>li>a {
+  font-weight: 700;
+}
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li.active>a {
+  border-bottom: 3px solid;
+  padding-bottom: 12px;
+}
+
+.custom ul.menu{
+	background: #fcfcfc;
+	border-left: 0;
+	}
+
+.custom ul.menu li{
+	}
+
+.custom ul.menu li a{
+	text-transform: none;	
+	font-weight: bold;
+	letter-spacing: 0;
+	background: #faf8f9;
+	}
+
+.custom ul.menu li.tab-home a{
+	border-left: 1px solid #ececec;
+	margin-left: 3em;
+	}
+
+.custom ul.menu li.current a,
+.custom ul.menu li.current-cat a,
+.custom ul.menu li.current-parent a,
+.custom ul.menu li:hover a{
+	background: #fff;
+	}
+
+
+/* Social Media Icons in Navigation Bar */
+
+ul.menu li.badge{
+	float: right;
+	}
+
+ul.menu li.badge a{
+     padding: 0px 6px;
+	 border: 0;
+     background: transparent;
+     }
+
+ul.menu li.badge a:hover{
+	position: relative;
+	top: 1px;
+	left: 1px;
+     }
+
+ul.menu li.feed.badge{
+	margin-right: 3em;
+    }
+
+ul.menu li.feed.badge a{
+	padding-right: 0;
+    }
+
+/* Hide Badges in Footer */
+
+.custom #footer ul.menu li.badge{
+	display: none; 
+	}
+
+
+
+/* Welcome Page Styles */
+
+.custom.welcome #content{
+	width: 974px;
+	border-right: 0;
+	}
+
+.custom.welcome #content .post_box.top{
+	padding-top: 1.5em;
+	margin-right: 4em;
+	}
+
+.custom.welcome .headline_area{
+	display: none;
+	}
+	
+.custom.welcome h2.welcome-titles{
+	margin-top: 0;
+	margin-bottom: 0.25em;
+	font-size: 2.2em;
+	letter-spacing: 1px;
+	}
+
+.custom.welcome h3.welcome-subtitles{
+	margin-top: 0;
+	font-size: 1.8em;
+	letter-spacing: 1px;
+	}
+
+.custom.welcome .post_box.top .format_text p a{
+	font-weight: bold;
+	}	
+
+ 
+/* Blog Archive Page Styles */
+
+.custom #content.hfeed .post.hentry{
+	border-bottom: 1px dotted #ececec;
+	}
+
+/* Social Media Sharing Styles */
+
+/* Subscribe and Share area After Posts */
+
+.custom #subscribe-and-share{
+	padding-top: 15px;
+	border-top: 1px solid #ddd;
+	overflow: hidden;
+	display: block;
+	clear: both;
+	}
+
+.custom #subscribe-and-share h4{
+	margin-bottom: 1em;
+	font-size: 16px;
+	font-weight: normal;
+	color: #00adf1;
+	}
+
+.custom #subscribe-and-share ul#share-buttons{
+	overflow: hidden;
+	margin-left: 0;
+	list-style-type: none;
+	font-size: 12px;
+	}
+
+.custom #subscribe-and-share ul#share-buttons li{
+	float: right;
+	margin-right: 20px;
+	}
+
+.custom #subscribe-and-share ul#share-buttons li#twitter-share-button{
+	margin-right: 0px;
+	margin-top: 1px;
+	}
+
+.custom #subscribe-and-share ul#share-buttons li#pfButton{
+	margin-top: 3px;
+	}
+
+.custom #subscribe-and-share ul#share-buttons li#permalink{
+	float: left;
+	}
+
+.custom #subscribe-and-share ul#share-buttons li#email-share-button{
+	background: url(images/detail-email.jpg) no-repeat 0% 50%;
+	padding-left:24px;
+	height: 22px;
+	display: block;
+	}
+
+.custom #subscribe-and-share ul#share-buttons li#email-share-button a{
+	text-decoration: none;
+	}
+
+
+
+
+/* Sidebar Styles */
+
+.custom .sidebar h3{
+	letter-spacing: 0;
+	font-weight: bold;
+	text-transform: none;
+	font-variant: normal;
+	color: #3a708c;
+	padding-bottom: 0.5em;
+	border-bottom: 1px solid #e2ecf1;
+	margin-bottom: 0.5em;
+	}
+
+
+
+/* Footer Styles */
+
+.custom #footer{
+	text-align: left;
+	padding: 2em 3.5em 2em 3.5em;
+	background: url(images/rp-lower-gradient.jpg) repeat-x;
+	font-size: 9pt;
+	color: #777;
+	}
+
+.custom #footer div.sidebar_list{
+	overflow: hidden;
+	margin-bottom: 2em; 
+	border-bottom: 1px solid #ececec;
+	}
+
+.custom #footer div.sidebar_list .widget{
+	width: 30%;
+	margin-right: 3.7%;
+	float: left;
+	}
+
+.custom #footer div.sidebar_list .widget#widget-text-4{
+	width: 31%;
+	margin-right: 0% !important;
+	float: left;
+	}
+
+.custom #footer div.sidebar_list .widget h3{
+	font-size: 12pt;
+	font-weight: bold;
+	padding-bottom: 0.5em;
+	border-bottom: 1px solid #e2ecf1;
+	margin-bottom: 0.5em;
+	color: #3a708c;
+	}
+	
+.custom #footer div.sidebar_list .widget ul li{
+	margin-bottom: 1em;
+	}
+
+.custom #footer div.sidebar_list .widget a{
+	text-decoration: none;
+	color: #3a708c;
+	border-bottom: none;
+	line-height: 1.571em;
+	font-size: 9pt;
+	}
+
+.custom #footer div.sidebar_list .widget a:hover{
+	text-decoration: underline;
+	}
+	 
+.custom #footer .footer-attribution{
+	font-size: 11px;
+	margin-top: 0.5em;
+	line-height: 1.5em;
+	} 
+
+.custom #footer #footer-nav{
+	background: none;
+	}
+
+.custom #footer #footer-nav .menu{
+	background: transparent;
+	border: none;
+	padding: 0;
+	margin-bottom: 0.5em;
+	}
+
+.custom #footer #footer-nav .menu li{
+	background: transparent;
+	border: none;
+	}
+
+.custom #footer #footer-nav .menu li a{
+	background: transparent;
+	border: none;
+	font-size: 9pt;
+	font-weight: normal;
+	}
+
+.custom #footer #footer-nav .menu li ul.submenu,
+.custom #footer #footer-nav .menu li ul.submenu li,
+.custom #footer #footer-nav .menu li ul.submenu li a{
+	background: #fff;
+	}
+
+.custom #footer #footer-nav .menu li.tab-home a{
+	padding-left: 0;
+	margin-left: 0;
+	}
